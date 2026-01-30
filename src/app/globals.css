@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --title: #ffee00;
 }
 
 @theme inline {
@@ -30,4 +31,5 @@ body {
   font-size: 5rem;
   letter-spacing: 0.5rem;
   font-family: var(--font-bangers);
+  color: var(--title);
 }
