@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Bangers } from "next/font/google";
+import { Geist, Geist_Mono, Bangers } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const bangers = Bangers({
-  variable:"--font-bangers",
+  variable: "--font-bangers",
   weight: "400",
   subsets: ['latin']
 });
@@ -31,9 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bangers.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bangers.variable} antialiased bg-(--color-fondo)`}
       >
-        {children}
+        <main className="p-10 bg-(--color-fondo)">
+          {children}
+        </main>
       </body>
     </html>
   );
