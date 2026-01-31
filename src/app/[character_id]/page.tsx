@@ -12,7 +12,7 @@ export default async function CharacterPage(props: characterProps) {
   const character_data = await fetch(`https://api.jikan.moe/v4/characters/${character_id}`)
   const character_json = await character_data.json();
   return (
-    <div>
+    <div className="">
         <Image src={character_json.data.images.webp.image_url} alt={`imagen de ${character_json.data.name}`} width={200} height={200}></Image>
         <h1 className='hxh-title'>{character_json.data.name}</h1>
         <h1 className='hxh-title'>{character_json.data.name_kanji}</h1>

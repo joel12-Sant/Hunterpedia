@@ -18,6 +18,15 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-fondo: #0D6526;
+    --color-contenedor: #8B1E1E;
+    --color-texto: #FFFFFF;
+    --color-texto-correcto: #0D6526;
+    --color-texto-incorrecto: #ce1111;
+    --color-boton: #F6C744;           
+    --color-boton-hover: #d9aa24;
+    --negro: #000000;   
+    --fuente-principal: 'Bangers', sans-serif;
   }
 }
 
@@ -31,5 +40,5 @@ body {
   font-size: 5rem;
   letter-spacing: 0.5rem;
   font-family: var(--font-bangers);
-  color: var(--title);
+  color: var(--color-texto);
 }
