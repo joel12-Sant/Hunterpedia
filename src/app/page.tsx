@@ -21,7 +21,7 @@ export default async function Home() {
   const characters_json: CharacterResponse = await characters_data.json();
 
   return (
-    <div className="hxh-title grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+    <div className="hxh-title grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 p-10">
       {characters_json.data.map((item) => (
         <div
           key={item.character.mal_id}
